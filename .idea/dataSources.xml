@@ -7,5 +7,21 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/watch_shop_test</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Rails watch_rails: development" uuid="a29f0789-36ad-4869-9906-77e08d9742ea">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/watch_shop_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Rails watch_rails: production" uuid="ac9e5fa0-c364-46d0-859b-b45c226ac6c0">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/birzha_production</jdbc-url>
+    </data-source>
   </component>
 </project>
