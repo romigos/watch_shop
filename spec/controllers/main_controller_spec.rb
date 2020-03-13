@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe MainController, type: :controller do
   describe 'GET #index' do
-    let (:brands) { create_list :brand, 3 }
-    let (:hits) { create_list :products, 8 }
+    let(:brands) { create_list :brand, 3 }
+    let(:hits) { create_list :products, 8 }
 
     before { get :index }
 
@@ -17,7 +19,6 @@ RSpec.describe MainController, type: :controller do
       it 'instance var hits include only hit' do
         expect(assigns(:hits)).to match_array(hits)
       end
-
     end
   end
 end
